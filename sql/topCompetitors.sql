@@ -1,3 +1,6 @@
+--All tables are connected by order. Where statement filtered scores and like this we can accumulate max score ones
+--according to difficulty level. 
+
 SELECT H.hacker_id, H.name FROM Hackers H
 JOIN Submissions S ON H.hacker_id = S.hacker_id
 JOIN Challenges C ON S.challenge_id = C.challenge_id
